@@ -1,28 +1,30 @@
-{{#data-table}}
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Winery</th>
-      <th>Bottle Size</th>
-      <th>Location</th>
-      <th>Vintage</th>
-      <th>Grape</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model as |entry|}}
+<div>
+  {{#data-table}}
+    <thead>
       <tr>
-        <td>{{entry.name}}</td>
-        <td>{{entry.winery}}</td>
-        <td>{{entry.size}}</td>
-        <td>{{entry.location}}</td>
-        <td>{{entry.vintage}}</td>
-        <td>{{entry.grape}}</td>
-        <td><button type="button" name="button">Edit</button></td>
-        <td><button type="button" name="button">Delete</button></td>
+        <th>Name</th>
+        <th>Winery</th>
+        <th>Bottle Size</th>
+        <th>Location</th>
+        <th>Vintage</th>
+        <th>Grape</th>
+        <th></th>
+        <th></th>
       </tr>
-    {{/each}}
-  </tbody>
-{{/data-table}}
+    </thead>
+    <tbody>
+      {{#each model as |entry|}}
+        <tr>
+          <td>{{entry.name}}</td>
+          <td>{{entry.winery}}</td>
+          <td>{{entry.size}}</td>
+          <td>{{entry.location}}</td>
+          <td>{{entry.vintage}}</td>
+          <td>{{entry.grape}}</td>
+          <td><button type="button" name="button">Edit</button></td>
+          <td><button type="button" name="button">Delete</button></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  {{/data-table}}
+</div>
