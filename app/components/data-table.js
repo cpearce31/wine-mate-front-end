@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   didInsertElement(){
-    this.$('#example').DataTable({
+    this.$('#datatable').DataTable({
       select: 'single',
       stateSave: true,
       columnDefs: [
