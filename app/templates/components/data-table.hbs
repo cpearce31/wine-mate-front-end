@@ -7,6 +7,9 @@
         <th>Location</th>
         <th>Vintage</th>
         <th>Grape</th>
+        {{#if quantity}}
+        <th>Quantity</th>
+        {{/if}}
         <th class="no-sort" >Edit</th>
         <th class="no-sort" >Delete</th>
       </tr>
@@ -20,6 +23,9 @@
       <td>{{entry.location}}</td>
       <td>{{entry.vintage}}</td>
       <td>{{entry.grape}}</td>
+      {{#if quantity}}
+      <td>{{entry.quantity}}</td>
+      {{/if}}
       <td align="center"><button type="button" name="button"> </button></td>
       <td align="center"><button type="button" name="button"> </button></td>
     </tr>
