@@ -1,4 +1,4 @@
-<h1 class="text-center"></h1>
+<h1 class="text-center">Wine Buddy</h1>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -8,9 +8,7 @@
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
         {{!-- modify to WL --}}
-        <li>{{#link-to "wish_lists"}}Users{{/link-to}}</li>
-        {{!-- modify to inventory --}}
-        <li>{{#link-to "inventories"}}Users{{/link-to}}</li>
+        <li>{{#link-to "wish_lists"}}Wish List{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -26,7 +24,7 @@
   </div>
 </nav>
 
-<h1 class="text-center">Welcome to Wine Buddy!</h1>
+<h2 class="text-center">Welcome to Wine Buddy!</h2><br>
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
