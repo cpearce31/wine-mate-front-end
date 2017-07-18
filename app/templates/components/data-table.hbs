@@ -1,0 +1,28 @@
+<table id="example" class="display" cellspacing="0" width="100%">
+  <thead>
+      <tr>
+        <th>Name</th>
+        <th>Winery</th>
+        <th>Bottle Size</th>
+        <th>Location</th>
+        <th>Vintage</th>
+        <th>Grape</th>
+        <th class="no-sort" >Edit</th>
+        <th class="no-sort" >Delete</th>
+      </tr>
+  </thead>
+  <tbody>
+    {{#each model as |entry|}}
+    <tr>
+      <td>{{entry.name}}</td>
+      <td>{{entry.winery}}</td>
+      <td>{{entry.size}}</td>
+      <td>{{entry.location}}</td>
+      <td>{{entry.vintage}}</td>
+      <td>{{entry.grape}}</td>
+      <td align="center"><button type="button" name="button"> </button></td>
+      <td align="center"><button type="button" name="button"> </button></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
