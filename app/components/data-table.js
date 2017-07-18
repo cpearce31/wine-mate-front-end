@@ -2,6 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'div',
+  actions: {
+    deleteEntry: function (entry, bool) {
+      return this.sendAction('deleteEntry', entry);
+    }
+  },
   didInsertElement(){
     this.$('#datatable').DataTable({
       select: 'single',

@@ -16,7 +16,7 @@
   </thead>
   <tbody>
     {{#each model as |entry|}}
-    <tr>
+    <tr id="row-{{entry.id}}">
       <td>{{entry.name}}</td>
       <td>{{entry.winery}}</td>
       <td>{{entry.size}}</td>
@@ -25,9 +25,12 @@
       <td>{{entry.grape}}</td>
       {{#if quantity}}
       <td>{{entry.quantity}}</td>
+      <td align="center"><button > </button></td>
+      <td align="center"><button {{action "deleteEntry" entry true}}> </button></td>
+      {{else}}
+      <td align="center"><button > </button></td>
+      <td align="center"><button {{action "deleteEntry" entry}}> </button></td>
       {{/if}}
-      <td align="center"><button type="button" name="button"> </button></td>
-      <td align="center"><button type="button" name="button"> </button></td>
     </tr>
     {{/each}}
   </tbody>
