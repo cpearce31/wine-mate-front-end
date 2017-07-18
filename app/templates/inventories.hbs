@@ -1,4 +1,4 @@
-<br><h3>Wishlist</h3><br>
+<br><h3>Inventory</h3><br>
 <div>
   {{#data-table}}
     <thead>
@@ -9,6 +9,7 @@
         <th>Location</th>
         <th>Vintage</th>
         <th>Grape</th>
+        <th>Quantity</th>
         <th></th>
         <th></th>
       </tr>
@@ -22,6 +23,7 @@
           <td>{{entry.location}}</td>
           <td>{{entry.vintage}}</td>
           <td>{{entry.grape}}</td>
+          <td>{{entry.quantity}}</td>
           <td><button type="button" name="button">Edit</button></td>
           <td><button type="button" name="button">Delete</button></td>
         </tr>
