@@ -4,7 +4,7 @@
           class="form-control"
           id="name"
           placeholder="Bottle Name"
-          value=passwords.previous}}
+          value=entry.name}}
 </div>
 
 <div class="form-group">
@@ -13,13 +13,13 @@
           class="form-control"
           id="winery"
           placeholder="Name of Winery"
-          value=passwords.next}}
+          value=entry.winery}}
 </div>
 
 
 <div class="form-group">
   <label for="size">Bottle Size</label><br>
-  <select id="size" class="form-control">
+  <select id="size" class="form-control" onchange={{action "updateValue" value="target.value"}}>>
     <option value="Split">Split (.187L)</option>
     <option value="Half">Half (.375L)</option>
     <option value="Standard" selected="selected">Standard (.75L)</option>
@@ -41,16 +41,16 @@
           class="form-control"
           id="location"
           placeholder="Location of Winery"
-          value=passwords.next}}
+          value=entry.location}}
 </div>
 
 <div class="form-group">
   <label for="vintage">Vintage</label>
-  {{input type="text"
+  {{input type="number"
           class="form-control"
           id="vintage"
           placeholder="Vintage(Year)"
-          value=passwords.next}}
+          value=entry.vintage}}
 </div>
 
 <div class="form-group">
@@ -59,12 +59,18 @@
           class="form-control"
           id="grape"
           placeholder="Type of Grape"
-          value=passwords.next}}
+          value=entry.grape}}
 </div>
 
-<button class="btn btn-primary" {{action "submit"}}>
+{{#if edit}}
+<button class="btn btn-primary" {{action "updateEntry"}}>
   Submit
 </button>
+{{else}}
+<button class="btn btn-primary" {{action "createEntry"}}>
+  Submit
+</button>
+{{/if}}
 
 {{#link-to 'wish_lists'}}
 <button class="btn btn-default">
