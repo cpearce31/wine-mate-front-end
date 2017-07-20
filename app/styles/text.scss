@@ -1,3 +1,30 @@
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #891313;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 4.2em;
+}
+h2, h3 {
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 3em;
+  text-align: center;
+}
+h4 {
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 2em;
+  text-align: center;
+}
+button {
+  font-family: 'Pacifico', cursive;
+}
 .text-center {
   text-align: center;
+}
+.wb {
+  font-family: 'Pacifico', cursive;
+}
+.navbar-brand.wb {
+  font-size: 1.8em;
 }
