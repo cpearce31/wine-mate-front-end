@@ -11,6 +11,9 @@ export default Ember.Component.extend({
     this.$('#datatable').DataTable({
       select: 'single',
       stateSave: true,
+      "language": {
+        "emptyTable": "You don't have any wine... Click 'New Entry' to get started."
+      },
       columnDefs: [
         { targets: 'no-sort', orderable: false }
       ]
