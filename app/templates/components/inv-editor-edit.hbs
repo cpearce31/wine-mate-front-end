@@ -18,10 +18,11 @@
 
 <div class="form-group">
   <label for="inv-size">Bottle Size</label><br>
-  <select id="inv-size" class="form-control" onchange={{action "updateValue" value="target.value"}}>>
+  <select id="inv-size" class="form-control" onchange={{action "updateValue" value="target.value"}}>
+    <option selected disabled>Change Bottle Size (optional)</option>
     <option value="Split">Split (.187L)</option>
     <option value="Half">Half (.375L)</option>
-    <option value="Standard" selected="selected">Standard (.75L)</option>
+    <option value="Standard">Standard (.75L)</option>
     <option value="Magnum">Magnum (1.5L)</option>
     <option value="Marie-Jeanne">Marie-Jeanne (2.25L)</option>
     <option value="Double Magnum">Double Magnum (3L)</option>
