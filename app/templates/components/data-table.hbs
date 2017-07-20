@@ -25,10 +25,10 @@
       <td>{{entry.grape}}</td>
       {{#if quantity}}
       <td>{{entry.quantity}}</td>
-      <td align="center"><button > </button></td>
-      <td align="center"><button {{action "deleteEntry" entry true}}> </button></td>
+      <td align="center">{{#link-to 'invedit' entry.id}}<button> </button>{{/link-to}}</td>
+      <td align="center"><button {{action "deleteEntry" entry}}> </button></td>
       {{else}}
-      <td align="center"><button > </button></td>
+      <td align="center">{{#link-to 'wledit' entry.id}}<button> </button>{{/link-to}}</td>
       <td align="center"><button {{action "deleteEntry" entry}}> </button></td>
       {{/if}}
     </tr>
