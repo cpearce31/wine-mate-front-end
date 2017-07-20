@@ -13,7 +13,6 @@ export default Ember.Route.extend({
       }).then(
         function (entry) {
           $('#datatable').DataTable().row('#row-' + entry.id).remove().draw();
-          console.log('deleted!');
       }).catch(
         () => {
         this.get('flashMessages')
