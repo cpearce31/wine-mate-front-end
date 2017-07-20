@@ -3,12 +3,24 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   router: Ember.inject.service("-routing"),
   store: Ember.inject.service(),
-  entry: {
-    size: 'Standard',
-    winery: '',
-    name: '',
-    quantity: 1
-  },
+  winery: '',
+  name: '',
+  size: 'Standard',
+  location: '',
+  vintage: null,
+  grape: '',
+  quantity: 1,
+  entry: Ember.computed('name', 'winery', 'size', 'location', 'vintage', 'grape', 'quantity', function () {
+    return {
+      name: this.get('name'),
+      winery: this.get('winery'),
+      size: this.get('size'),
+      location: this.get('location'),
+      vintage: this.get('vintage'),
+      grape: this.get('grape'),
+      quantity: this.get('quantity')
+    }
+  }),
   actions: {
     createEntry: function () {
       this.get('store').createRecord('inventory', this.get('entry')).save().then(
