@@ -70,15 +70,9 @@
           value=entry.quantity}}
 </div>
 
-{{#if edit}}
-<button class="btn btn-primary" {{action "updateEntry"}}>
-  Submit
-</button>
-{{else}}
 <button class="btn btn-primary" {{action "createEntry"}}>
   Submit
 </button>
-{{/if}}
 
 {{#link-to 'inventories'}}
 <button class="btn btn-default">

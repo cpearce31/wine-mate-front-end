@@ -62,15 +62,9 @@
           value=entry.grape}}
 </div>
 
-{{#if edit}}
-<button class="btn btn-primary" {{action "updateEntry"}}>
-  Submit
-</button>
-{{else}}
 <button class="btn btn-primary" {{action "createEntry"}}>
   Submit
 </button>
-{{/if}}
 
 {{#link-to 'wish_lists'}}
 <button class="btn btn-default">
