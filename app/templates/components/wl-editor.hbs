@@ -1,25 +1,25 @@
 <div class="form-group">
-  <label for="name">Name</label>
+  <label for="wl-name">Name</label>
   {{input type="text"
           class="form-control"
-          id="name"
+          id="wl-name"
           placeholder="Bottle Name"
           value=entry.name}}
 </div>
 
 <div class="form-group">
-  <label for="winery">Winery</label>
+  <label for="wl-winery">Winery</label>
   {{input type="text"
           class="form-control"
-          id="winery"
+          id="wl-winery"
           placeholder="Name of Winery"
           value=entry.winery}}
 </div>
 
 
 <div class="form-group">
-  <label for="size">Bottle Size</label><br>
-  <select id="size" class="form-control" onchange={{action "updateValue" value="target.value"}}>>
+  <label for="wl-size">Bottle Size</label><br>
+  <select id="wl-size" class="form-control" onchange={{action "updateValue" value="target.value"}}>>
     <option value="Split">Split (.187L)</option>
     <option value="Half">Half (.375L)</option>
     <option value="Standard" selected="selected">Standard (.75L)</option>
@@ -36,28 +36,28 @@
 </div>
 
 <div class="form-group">
-  <label for="location">Location</label>
+  <label for="wl-location">Location</label>
   {{input type="text"
           class="form-control"
-          id="location"
+          id="wl-location"
           placeholder="Location of Winery"
           value=entry.location}}
 </div>
 
 <div class="form-group">
-  <label for="vintage">Vintage</label>
+  <label for="wl-vintage">Vintage</label>
   {{input type="number"
           class="form-control"
-          id="vintage"
+          id="wl-vintage"
           placeholder="Vintage(Year)"
           value=entry.vintage}}
 </div>
 
 <div class="form-group">
-  <label for="grape">Grape</label>
+  <label for="wl-grape">Grape</label>
   {{input type="text"
           class="form-control"
-          id="grape"
+          id="wl-grape"
           placeholder="Type of Grape"
           value=entry.grape}}
 </div>

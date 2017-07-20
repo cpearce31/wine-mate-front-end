@@ -1,24 +1,24 @@
 <div class="form-group">
-  <label for="name">Name</label>
+  <label for="inv-name">Name</label>
   {{input type="text"
           class="form-control"
-          id="name"
+          id="inv-name"
           placeholder="Bottle Name"
           value=entry.name}}
 </div>
 
 <div class="form-group">
-  <label for="winery">Winery</label>
+  <label for="inv-winery">Winery</label>
   {{input type="text"
           class="form-control"
-          id="winery"
+          id="inv-winery"
           placeholder="Name of Winery"
           value=entry.winery}}
 </div>
 
 <div class="form-group">
-  <label for="size">Bottle Size</label><br>
-  <select id="size" class="form-control" onchange={{action "updateValue" value="target.value"}}>>
+  <label for="inv-size">Bottle Size</label><br>
+  <select id="inv-size" class="form-control" onchange={{action "updateValue" value="target.value"}}>>
     <option value="Split">Split (.187L)</option>
     <option value="Half">Half (.375L)</option>
     <option value="Standard" selected="selected">Standard (.75L)</option>
@@ -35,37 +35,37 @@
 </div>
 
 <div class="form-group">
-  <label for="location">Location</label>
+  <label for="inv-location">Location</label>
   {{input type="text"
           class="form-control"
-          id="location"
+          id="inv-location"
           placeholder="Location of Winery"
           value=entry.location}}
 </div>
 
 <div class="form-group">
-  <label for="vintage">Vintage</label>
+  <label for="inv-vintage">Vintage</label>
   {{input type="number"
           class="form-control"
-          id="vintage"
+          id="inv-vintage"
           placeholder="Vintage(Year)"
           value=entry.vintage}}
 </div>
 
 <div class="form-group">
-  <label for="grape">Grape</label>
+  <label for="inv-grape">Grape</label>
   {{input type="text"
           class="form-control"
-          id="grape"
+          id="inv-grape"
           placeholder="Type of Grape"
           value=entry.grape}}
 </div>
 
 <div class="form-group">
-  <label for="grape">Quantity</label>
+  <label for="inv-quantity">Quantity</label>
   {{input type="number"
           class="form-control"
-          id="quantity"
+          id="inv-quantity"
           placeholder="1"
           value=entry.quantity}}
 </div>
