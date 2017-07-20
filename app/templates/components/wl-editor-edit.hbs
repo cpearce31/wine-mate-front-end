@@ -4,7 +4,7 @@
           class="form-control"
           id="wl-name"
           placeholder="Bottle Name"
-          value=entry.name}}
+          value=name}}
 </div>
 
 <div class="form-group">
@@ -13,16 +13,17 @@
           class="form-control"
           id="wl-winery"
           placeholder="Name of Winery"
-          value=entry.winery}}
+          value=winery}}
 </div>
 
 
 <div class="form-group">
   <label for="wl-size">Bottle Size</label><br>
   <select id="wl-size" class="form-control" onchange={{action "updateValue" value="target.value"}}>>
+    <option selected disabled>Change Bottle Size (optional)</option>
     <option value="Split">Split (.187L)</option>
     <option value="Half">Half (.375L)</option>
-    <option value="Standard" selected="selected">Standard (.75L)</option>
+    <option value="Standard">Standard (.75L)</option>
     <option value="Magnum">Magnum (1.5L)</option>
     <option value="Marie-Jeanne">Marie-Jeanne (2.25L)</option>
     <option value="Double Magnum">Double Magnum (3L)</option>
@@ -41,7 +42,7 @@
           class="form-control"
           id="wl-location"
           placeholder="Location of Winery"
-          value=entry.location}}
+          value=location}}
 </div>
 
 <div class="form-group">
@@ -50,7 +51,7 @@
           class="form-control"
           id="wl-vintage"
           placeholder="Vintage(Year)"
-          value=entry.vintage}}
+          value=vintage}}
 </div>
 
 <div class="form-group">
@@ -59,7 +60,7 @@
           class="form-control"
           id="wl-grape"
           placeholder="Type of Grape"
-          value=entry.grape}}
+          value=grape}}
 </div>
 
 <button class="btn btn-primary" {{action "updateEntry" model}}>
