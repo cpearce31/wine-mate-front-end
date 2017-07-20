@@ -10,16 +10,6 @@ export default Ember.Component.extend({
     quantity: 1
   },
   actions: {
-    createEntry: function () {
-      this.get('store').createRecord('inventory', this.get('entry')).save().then(
-        () => {
-          this.get('router').transitionTo('inventories')
-        }
-      ).catch(() => {
-        this.get('flashMessages')
-        .danger('There was a problem adding your entry. Please try again.');
-      })
-    },
     updateValue: function(value) {
       this.set('entry.size', value);
     },

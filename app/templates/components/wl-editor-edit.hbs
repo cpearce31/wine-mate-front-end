@@ -1,0 +1,73 @@
+<div class="form-group">
+  <label for="wl-name">Name</label>
+  {{input type="text"
+          class="form-control"
+          id="wl-name"
+          placeholder="Bottle Name"
+          value=entry.name}}
+</div>
+
+<div class="form-group">
+  <label for="wl-winery">Winery</label>
+  {{input type="text"
+          class="form-control"
+          id="wl-winery"
+          placeholder="Name of Winery"
+          value=entry.winery}}
+</div>
+
+
+<div class="form-group">
+  <label for="wl-size">Bottle Size</label><br>
+  <select id="wl-size" class="form-control" onchange={{action "updateValue" value="target.value"}}>>
+    <option value="Split">Split (.187L)</option>
+    <option value="Half">Half (.375L)</option>
+    <option value="Standard" selected="selected">Standard (.75L)</option>
+    <option value="Magnum">Magnum (1.5L)</option>
+    <option value="Marie-Jeanne">Marie-Jeanne (2.25L)</option>
+    <option value="Double Magnum">Double Magnum (3L)</option>
+    <option value="Jeroboam">Jeroboam (5L)</option>
+    <option value="Imperiale">Imperiale (6L)</option>
+    <option value="Salmanazar">Salmanazar (9L)</option>
+    <option value="Balthazar">Balthazar (12L)</option>
+    <option value="Nebuchadnezzar">Nebuchadnezzar (15L)</option>
+    <option value="Melchior">Melchior (18L)</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="wl-location">Location</label>
+  {{input type="text"
+          class="form-control"
+          id="wl-location"
+          placeholder="Location of Winery"
+          value=entry.location}}
+</div>
+
+<div class="form-group">
+  <label for="wl-vintage">Vintage</label>
+  {{input type="number"
+          class="form-control"
+          id="wl-vintage"
+          placeholder="Vintage(Year)"
+          value=entry.vintage}}
+</div>
+
+<div class="form-group">
+  <label for="wl-grape">Grape</label>
+  {{input type="text"
+          class="form-control"
+          id="wl-grape"
+          placeholder="Type of Grape"
+          value=entry.grape}}
+</div>
+
+<button class="btn btn-primary" {{action "updateEntry" model}}>
+  Submit
+</button>
+
+{{#link-to 'wish_lists'}}
+<button class="btn btn-default">
+  Cancel
+</button>
+{{/link-to}}

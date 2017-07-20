@@ -9,16 +9,6 @@ export default Ember.Component.extend({
     name: ''
   },
   actions: {
-    createEntry: function () {
-      this.get('store').createRecord('wish_list', this.get('entry')).save().then(
-        () => {
-          this.get('router').transitionTo('wish_lists')
-        }
-      ).catch(() => {
-        this.get('flashMessages')
-        .danger('There was a problem adding your entry. Please try again.');
-      })
-    },
     updateValue: function(value) {
       this.set('entry.size', value);
     },
