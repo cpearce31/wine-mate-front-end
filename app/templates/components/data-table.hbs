@@ -4,7 +4,7 @@
         <th>Name</th>
         <th>Winery</th>
         <th>Bottle Size</th>
-        <th>Location</th>
+        <th>Region</th>
         <th>Vintage</th>
         <th>Grape</th>
         {{#if quantity}}
@@ -25,11 +25,11 @@
       <td>{{entry.grape}}</td>
       {{#if quantity}}
       <td>{{entry.quantity}}</td>
-      <td align="center">{{#link-to 'invedit' entry.id}}<button> </button>{{/link-to}}</td>
-      <td align="center"><button {{action "deleteEntry" entry}}> </button></td>
+      <td align="center">{{#link-to 'invedit' entry.id}}<button class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-pencil"></span></button>{{/link-to}}</td>
+      <td align="center"><button class="btn btn-sm btn-danger" {{action "deleteEntry" entry}}><span class="glyphicon glyphicon-remove"></span></button></td>
       {{else}}
-      <td align="center">{{#link-to 'wledit' entry.id}}<button> </button>{{/link-to}}</td>
-      <td align="center"><button {{action "deleteEntry" entry}}> </button></td>
+      <td align="center">{{#link-to 'wledit' entry.id}}<button class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-pencil"></span></button>{{/link-to}}</td>
+      <td align="center"><button class="btn  btn-sm btn-danger" {{action "deleteEntry" entry}}><span class="glyphicon glyphicon-remove"></span></button></td>
       {{/if}}
     </tr>
     {{/each}}
