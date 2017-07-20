@@ -1,14 +1,25 @@
 ![Wine Buddy Logo](http://i.imgur.com/WLWCTLl.png)
 
-# Authentication in Ember
+# App Screenshots
 
-This training will involve a lot of following code and and exploring the
-Chrome Inspector and utilizing Ember Inspector.  It is recommended that you
-comment code or take notes.
+Main View:
+![Wine Buddy Main](http://i.imgur.com/rA9j6t9.png)
 
-## Prerequisites
+Inventory View:
+![Wine Buddy Inventory](http://i.imgur.com/QLvPZ93.png)
 
--   [Ember Resources](https://github.com/ga-wdi-boston/ember-resources)
+Wish List View:
+![Wine Buddy Wish List](http://i.imgur.com/4Rfyh7O.png)
+
+Add/Edit View:
+![Wine Buddy Add/Edit](http://i.imgur.com/OuCtW3p.png)
+
+## Technologies
+
+* [Ember](https://www.emberjs.com/)
+* [Datatables](https://datatables.net/)
+* [Bootstrap](http://getbootstrap.com/)
+* [Jquery](https://jquery.com/)
 
 ## Objectives
 
