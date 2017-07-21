@@ -41,19 +41,21 @@ etc.
 5. As a user, I want to be able to edit and remove wines from my lists in case I
 no longer own a bottle, or make an error during entry
 
-## Initial Wire Frames
+## Initial Wire Frames and ERD
 
 Initial wireframes show a slightly different UI scheme along with an intial plan
 to use [Addepar Ember Tables](http://opensource.addepar.com/ember-table/).
 
-![Wine Buddy Logo](http://i.imgur.com/WLWCTLl.png)
+![Wireframe Splash](http://i.imgur.com/0wfgRNt.png)
 
-![Wine Buddy Logo](http://i.imgur.com/WLWCTLl.png)
+![Wireframe Main](http://i.imgur.com/LjtAekD.png)
+
+![Wine Buddy ERD](http://i.imgur.com/8OsRaUy.png)
 
 ## Plans and General Approach
 
 I began this project by identifying some sort of real-life need that could be
-solved with a web-application. My father collects wine, so I relized I could build
+solved with a web-application. My father collects wine, so I realized I could build
 an application that allows him to keep tabs on his collection, and access it while
 away from home.
 
