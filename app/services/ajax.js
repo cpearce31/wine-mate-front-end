@@ -1,7 +1,9 @@
 import Ember from 'ember';
 import AjaxService from 'ember-ajax/services/ajax';
 
+
 import ENV from 'wine-mate-front-end/config/environment';
+
 
 export default AjaxService.extend({
   host: ENV.apiHost,

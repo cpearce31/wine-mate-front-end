@@ -5,7 +5,7 @@ module.exports = function (environment) {
   var ENV = {
     modulePrefix: 'wine-mate-front-end',
     environment: environment,
-    rootURL: '/',
+    rootURL: '/wine-mate-front-end',
     locationType: 'auto',
     apiHost: 'http://localhost:3000/',
     EmberENV: {
