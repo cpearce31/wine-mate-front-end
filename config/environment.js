@@ -1,11 +1,10 @@
 /* jshint node: true */
 
 module.exports = function (environment) {
-  'use strict';
   var ENV = {
     modulePrefix: 'wine-mate-front-end',
     environment: environment,
-    rootURL: '/wine-mate-front-end',
+    rootURL: '/',
     locationType: 'auto',
     apiHost: 'http://localhost:3000/',
     EmberENV: {
