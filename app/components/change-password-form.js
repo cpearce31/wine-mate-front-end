@@ -7,7 +7,6 @@ export default Ember.Component.extend({
   passwords: {},
 
   init() {
-    this._super(...arguments);
     this.set('passwords', {});
   },
 
