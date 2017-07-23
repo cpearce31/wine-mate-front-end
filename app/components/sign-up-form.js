@@ -11,6 +11,11 @@ export default Ember.Component.extend({
       this.sendAction('submit', this.get('credentials'));
     },
 
+    init() {
+      this._super(...arguments);
+      this.set('credentials', {});
+    },
+
     reset () {
       this.set('credentials', {});
     },
